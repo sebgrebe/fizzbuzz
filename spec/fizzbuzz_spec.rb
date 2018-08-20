@@ -19,4 +19,10 @@ describe 'fizzbuzz' do
   it 'returns 2 when passed 2' do
     expect(fizzbuzz(2)).to eq 2
   end
+  it 'returns nil when passed a string' do
+    expect(fizzbuzz("str")).to eq nil
+  end
+  it 'returns nil when passed a boolean' do
+    expect(fizzbuzz(true)).to eq nil
+  end
 end
